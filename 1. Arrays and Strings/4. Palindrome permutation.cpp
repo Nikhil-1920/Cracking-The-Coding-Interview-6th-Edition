@@ -51,6 +51,7 @@ bool isPermutationOfPalindrome2(const string &s) {
         index = getIndex(ch);
         if(index != -1) {
             freq[index]++;
+            
             if(freq[index] % 2) oddCount++;
             else oddCount--;
         }
@@ -83,8 +84,8 @@ bool isExactlyOneBitset(int bitVector) {
 // if bitVector is left with more than 1 bit, string
 // cannot have palindrome-permutation
 bool isPermutationOfPalindrome3(const string &s) {
-    int bitVector = 0;
-    int index = 0;
+    int bitVector = 0, index = 0;
+     
     for(const char &ch : s) {
         index = getIndex(ch);
         bitVector = toggle(bitVector, index);
