@@ -6,6 +6,7 @@ using namespace std;
 
 // using sort algorithm
 bool arePermutation1(string s1, string s2) {
+    
     int l1 = s1.length();
     int l2 = s2.length();
     
@@ -24,6 +25,7 @@ bool arePermutation1(string s1, string s2) {
 
 // using character counting
 bool arePermutation2(const string &s1, const string &s2) {
+    
     int l1 = s1.length();
     int l2 = s2.length();
     
@@ -47,7 +49,9 @@ bool arePermutation2(const string &s1, const string &s2) {
     return true;
 }
 
+
 int main(void) {
+    
     // Test Method 1 - Using sort algorithm
     cout << "Test Method 1 - Using sort algorithm" << endl;
     string s1 = "heart";
