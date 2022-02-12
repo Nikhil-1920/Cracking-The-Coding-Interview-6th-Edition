@@ -7,7 +7,8 @@ using namespace std;
 // s1s1, since rotated string will always be 
 // substring of s1s1 regardless of divison
 // point of original string
-bool isRotation(string s1, string s2) {
+bool isSubstring(string s1, string s2) {
+    
     size_t l1 = s1.length();
     size_t l2 = s2.length();
     
@@ -17,7 +18,6 @@ bool isRotation(string s1, string s2) {
     string concatS1 = s1 + s1;
     if(concatS1.find(s2) != string :: npos)
         return true;
-        
     else return false;
 }
 
@@ -29,7 +29,7 @@ int main(void) {
     cout << "Enter string2: ";
     cin >> s2;
     
-    if(isRotation(s1, s2)) 
+    if(isSubstring(s1, s2)) 
         cout << "Yes! " << s2 << " is rotation of " << s1 << endl;
     else {
         cout << "No! " << s2 << " is not the rotation of " << s1;
