@@ -1,4 +1,8 @@
-// Removing duplicates from an unsorted linked list
+// Q.2.1. Remove Dups: Write code to remove duplicates from an unsorted linked list
+
+// Author: Nikhil Singh
+// Last Modified: 22/06/2022
+
 
 #include <iostream>
 #include <random>
